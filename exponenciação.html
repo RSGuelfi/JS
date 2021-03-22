@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exponenciação</title>
+  <style>
+body {
+  background-color: lightblue;
+}
+
+b {
+  color: darkblue;
+  text-align: middle;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+
+a {
+  color: darkred;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 23px;
+}
+
+button {
+  background-color: greenyellow;
+  color: darkred;
+  text-align: left;
+  font-family: sans-serif;
+  font-size: 20px;
+}
+
+input {
+  font-size: 17px;
+  width: 100px;
+}
+
+    </style>
+</head>
+<body>
+	<b>Coloque os valores para cara o calculo </b><br><br>
+    <a>Insira o valor do expoente: </a><input id="campo1" type="number"><br><br>
+    <a>Insira o valor da base: </a><input id="campo2" type="number"><br><br>
+    <button onclick=inicio()>Calcular</button><br><br>
+    <a id="resultado">...</a>
+    <br><br>
+      <script>
+        let base;
+		let expoente;
+		let resultadoPositivo;
+		let resultadoNegativo;
+
+		function inicio() {
+		  expoente = document.getElementById("campo1").value;
+		  base = document.getElementById("campo2").value;
+		  resultadoPositivo = 0;
+		  resultadoNegativo = 0;
+		  
+		  if (expoente == 0 || base == 0) {
+		    document.getElementById("resultado").innerHTML = "Por favor digite um valor válido";
+		  } else if (expoente == 1) {
+		    document.getElementById("resultado").innerHTML = base;
+		  } else if (expoente < 0) {
+		    negativo();
+		  } else {
+		    expoente--;
+		    positivo();
+		  }
+		}
+
+		function positivo() {
+		  if (expoente == 0) {
+		    document.getElementById("resultado").innerHTML = resultadoPositivo;
+		  } else if (expoente) {
+		    teste1();
+		  }
+		}
+
+		function teste1() {
+		  if (resultadoPositivo == 0) {
+		    resultadoPositivo = base * base;
+		    expoente--;
+		    positivo();
+		  } else if (resultadoPositivo != 0) {
+		    resultadoPositivo = resultadoPositivo * base;
+		    expoente--;
+		    positivo();
+		  }
+		}
+
+		function negativo() {
+		  if (expoente == 0) {
+		    document.getElementById("resultado").innerHTML = resultadoNegativo;
+		  } else {
+		    teste2();
+		  }
+		}
+
+		function teste2() {
+		  if (resultadoNegativo == 0) {
+		    resultadoNegativo = 1 / base;
+		    expoente++;
+		    negativo();
+		  } else if (resultadoNegativo != 0) {
+		    resultadoNegativo = resultadoNegativo / base;
+		    expoente++;
+		    negativo();
+		  }
+		}
+
+    </script>
+</body>
+</html>
