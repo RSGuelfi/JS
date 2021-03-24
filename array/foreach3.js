@@ -1,4 +1,6 @@
-const notas = [1,24,56,78,4,3,45,]
+const { nodeModuleNameResolver } = require("typescript");
+
+const notas = [1,24,560,7]
 
 for(let nota of notas) {
     console.log(nota)
@@ -18,5 +20,19 @@ for(let notas3 of notas) {
 
 console.log(valores)
 
-// in mostra os indices; of mostra os valores
+// in mostra os indices dos valores; of mostra os valores do array
+
+function praCadaElemento(elemento, indice, array) {
+    console.log(elemento, indice, array)
+} // mostra o elemento, o indice, e o array completo
+
+notas.forEach(praCadaElemento)
+
+notas.forEach(function (elemento) {
+    console.log(elemento)
+}) // mostra somento o elemento do array
+
+
+
+
 
