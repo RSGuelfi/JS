@@ -1,103 +1,94 @@
  /*
  
- (/) = divisão
+ - (/) = divisão
  
- (%) = resto da divisao inteira
+ - (%) = resto da divisao inteira
 
- (**) = ao quadrado                                                       
+ - (**) = ao quadrado                                                       
  
- (var += number||var) = var + number||var (var -= number||var) = var - number||var // Só funciona com variaveis
+ - (var += number||var) = var + number||var (var -= number||var) = var - number||var 
+ // Só funciona com variaveis
 
- (++var) e (--var) = incrementa e decrementa antes
+ - (++var) e (--var) = incrementa e decrementa antes
  
- (var++) e (var--) = incrementa e decrementa depois
+ - (var++) e (var--) = incrementa e decrementa depois
  
- (!=) = diferente
+ - (!=) = diferente
 
- (==) = igual                                                  
+ - (==) = igual                                                  
  
- (===) = identico
+ - (===) = identico
 
- (!) = false
+ - (!) = false
  
- (!!) = true
+ - (!!) = true
  
- (&&) = conjunção
+ - (&&) = conjunção
 
- (||) = disjunção
+ - (||) = disjunção
  
- (number + number) = adição
+ - (number + number) = adição
 
- (string + string) = concatenação   
+ - (string + string) = concatenação
  
- Number.parseInt(x) = Converte o number para Inteiro
-
- Number.parseFloat(x) = Converte o number para Real
+ - var git = 865 = Number
  
- Number(x) = Converte para number
-
- ${x} = adiciona expressões em uma string obrigatorio o uso de ``
+ - git = "hub" = String
  
- x.toUpperCase() = Muda string para maiusculo 
+ - git = true = Boolean
 
- x.toLowerCase() = Muda string para minusculo 
+ - Ctrl + K + U || Ctrl + ; = Remove comentario 
+
+ - Ctrl + K + C || Ctrl + ; = Adiciona comentario
+
+ - new Date = mostra a data atual
+
+ - Set = não adiciona um valor que já foi adicionado
+
+ - Set.add = Adiciona novos valores ao Set
+
+ - Set.delete = Apaga valores adicionados ao Set
+
+ - Set.has = Responde se um valor existe no Set
+
+ - no escopo global -> this = globalThis
+
+ - ! = Falso
  
- x.length = mostra quantos caracteres uma string tem
-
- arr.push('string', number) = adiciona novos items ao array
-
- class Car {                 
-    constructor(brand) {      
-        this.carname = brand      
-        
-        "contructor() é usado para criar e inicializar objetos criados dentro da classe"
-    }                         
- }
-
- ! = Falso
-
- var git = 865 = Number
+ - != verifica o valor / não igual
  
- git = "hub" = String
+ - !== verifica o valor e o tipo / não identico
+
+ - map é um manipulador de array
+
+ - arrays podem conter diversos objects e arrays dentro de um só dependendo da maneira que eles forem atribuidos
+
+ - map não modifica o array original, No entanto callback invocada por ele pode modificá-lo
+
+ - inicializar variaveis dentro de um for é opcional
+
+ - break termina expressões continuas no switch
+
+ - default adiciona um valor padrão para sempre usa-lo quando nada/valores diferentes forem atribuidos 
+
+ - switch não realiza os outros cases após terminar um deles
+
+ - let não é global e não realiza a redeclaracão dentro de um bloco bloco enquanto var é global 
+
+ - A função Math.ceil(x) retorna o menor número inteiro maior ou igual a "x".
+
+ - Expressões falsas null, NaN, 0, ("")
+
+ - ? = Se a condição for false será usado o valor atribuido a ("IfFalse") sempre do lado esquerdo entre : ("IfTrue")
+  ex: Condição ? falso : verdadeiro
+
+ - .indexOf() = retorna o primeiro índice em que o elemento pode ser encontrado no array, retorna -1 caso o mesmo não esteja presente.
+
+ - .includes = retorna verdadeiro ou falso se a condição existir no array
+
+ - .join = adiciona a condição após cada valor do array
+
+ - .pop = remove o ultimo elemento do array
  
- git = true = Boolean
-
- Ctrl + K + U || Ctrl + ; = Remove comentario 
  
- Ctrl + K + C || Ctrl + ; = Adiciona comentario
-
- Set = não adiciona um valor que já foi adicionado
-
- Set.add = Adiciona novos valores ao Set
-
- Set.delete = Apaga valores adicionados ao Set
-
- Set.has = Responde se um valor existe no Set
-
- no escopo global this = globalThis
- 
- != verifica o valor / não igual
- 
- !== verifica o valor e o tipo / não identico
-
- map é um manipulador de array
-
- arrays podem conter diversos objects e arrays dentro de um só dependendo da maneira que eles forem atribuidos
-
- map não modifica o array original, No entanto callback invocada por ele pode modificá-lo
-
- inicializar variaveis dentro de um for é opcional
-
- break termina expressões continuas
-
- default adiciona um valor padrão para sempre usa-lo quando nada/valores diferentes forem atribuidos 
-
- switch não realiza os outros cases após terminar um deles
-
- switch não aceita multiplas expressões em um case -> errado: case 1 || 2: & certo: case 1: case 2:
-
- for é util para iterar.
-
- let não é global e não realiza a redeclaracão dentro de um bloco bloco enquanto var é global 
-
  */
