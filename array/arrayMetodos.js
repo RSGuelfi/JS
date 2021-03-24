@@ -26,3 +26,11 @@ console.log(algunsPilotos1)
 
 const algunsPilotos2 = pilotos.slice(1, 4) // Não retorna o 4
 console.log(algunsPilotos2)
+
+let valores = [1,2,3,4,5,65,756,9]
+
+console.log(valores.indexOf(65))
+
+console.log(pilotos.includes('Alonso'))
+
+console.log(valores.join(' - '))
