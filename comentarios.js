@@ -89,6 +89,15 @@
  - .join = adiciona a condição após cada valor do array
 
  - .pop = remove o ultimo elemento do array
- 
- 
+
+ - ... = é usado para clonar arrays/objects em um só array/object, quando usado com console.log mostra somente os valores do array
+ ex: array = [123,456,'abc'] 
+     console.log(...array) -> 123 456 abc
+
+ - Iterables: String, Array, TypedArray, Map e Set
+
+ - this é usado para referenciar atributos dentro de um objetos
+
+ -
+
  */

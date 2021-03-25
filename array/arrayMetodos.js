@@ -27,10 +27,13 @@ console.log(algunsPilotos1)
 const algunsPilotos2 = pilotos.slice(1, 4) // Não retorna o 4
 console.log(algunsPilotos2)
 
-let valores = [1,2,3,4,5,65,756,9]
+let valores = [1,2,3,4,5,67,89] 
 
-console.log(valores.indexOf(65))
+console.log(valores.indexOf(67)) // mostra o indice do valor
 
-console.log(pilotos.includes('Alonso'))
+console.log(valores.includes(67)) // verifica se o valor existe no array
 
-console.log(valores.join(' - '))
+console.log(valores.join(' - ')) // adiciona qualquer coisa entre os após cada valor  
+
+spread = ['var', 123]
+console.log(spread)

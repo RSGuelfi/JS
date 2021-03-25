@@ -26,7 +26,7 @@ function praCadaElemento(elemento, indice, array) {
     console.log(elemento, indice, array)
 } // mostra o elemento, o indice, e o array completo
 
-notas.forEach(praCadaElemento)
+
 
 notas.forEach(function (elemento) {
     console.log(elemento)
